@@ -45,6 +45,11 @@ fat 1 = 1
 fat 2 = 2
 fat a | a > 2 = a * fat(a-1)
 
+fibo :: Int -> Int
+fibo 0 = 1
+fibo 1 = 1
+fibo a = (fibo (a-1)) + (fibo (a-2)) 
+
 elemento :: [Int]-> Int -> Int
 elemento [] b = 0
 elemento (a:as) b | (b-1) < 0 = (a)
